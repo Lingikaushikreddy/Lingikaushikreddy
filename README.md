@@ -17,7 +17,7 @@ Data analyst and systems builder based in Virginia. MS in Data Analytics from Ge
 | [**pulse**](https://github.com/Lingikaushikreddy/pulse) | Realtime task board that shows its own latency budget live: <100 ms per interaction, <200 ms to sync. | Next.js · TypeScript · Realtime |
 | [**Contract & Invoice Intelligence**](https://github.com/Lingikaushikreddy/Thrill-AI-Contract-Invoice-Intelligence-System) | Checks invoices against their contracts, flags mismatches and risky clauses, and tracks precision/recall/F1. | LangGraph · Qdrant · Next.js |
 | [**three-tier-devops**](https://github.com/Lingikaushikreddy/three-tier-devops) | nginx → Flask → PostgreSQL with Prometheus + Grafana; CI breaks the database on purpose to prove the alerts fire. | Docker Compose · GitHub Actions |
-| [**bharat-mcp**](https://github.com/Lingikaushikreddy/bharat-mcp) | Model Context Protocol servers for Indian fintech: Razorpay, UPI, GST, DigiLocker, Aadhaar. | TypeScript · MCP |
+| [**parallel-researcher**](https://github.com/Lingikaushikreddy/parallel-researcher) | Multi-agent research engine: splits a question into parallel threads and returns a report with confidence-scored citations. CLI, library and MCP server. | Python · asyncio · MCP |
 
 ### 🧰 Toolbox
 
