@@ -36,11 +36,12 @@ Data analyst and systems builder · MS Data Analytics, George Mason '25 · Virgi
 
 ## 🔧 Open source contributions
 
-Bugs I reproduced first, then fixed, in projects I use:
+Fixes and features shipped into projects I use. Every bug here was reproduced before it was fixed:
 
 | Project | Contribution | Status |
 |---|---|---|
 | [**libredb-studio**](https://github.com/libredb/libredb-studio) ★790 | [One-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947) — Compose + Caddy TLS + preconfigured realm — and three security-docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940)) | ✅ merged |
+| [**BizzAI**](https://github.com/orion-ai-community/BizzAI) ★30 | Return-refund options with a customer-credit system ([#186](https://github.com/orion-ai-community/BizzAI/pull/186)) and an infrastructure upgrade ([#178](https://github.com/orion-ai-community/BizzAI/pull/178)) for this open-source POS and inventory system | ✅ merged |
 | [**Backlog.md**](https://github.com/MrLesk/Backlog.md) ★6.8k | [Git fetch no longer fails](https://github.com/MrLesk/Backlog.md/pull/1023) when the only remote isn't named `origin`, with a regression test | 🔄 in review |
 | [**tunarr**](https://github.com/chrisbenincasa/tunarr) ★2.6k | [Fixer for mislabelled Jellyfin/Emby rows](https://github.com/chrisbenincasa/tunarr/pull/2112) that made guide endpoints return 500 | 🔄 in review |
 | [**PasarGuard**](https://github.com/PasarGuard/panel) ★2.6k | [Clipboard copy inside focus-trapped menus](https://github.com/PasarGuard/panel/pull/907) on plain-HTTP deployments | 🔄 in review |
@@ -52,12 +53,12 @@ Bugs I reproduced first, then fixed, in projects I use:
 
 | Project | What it does | Stack |
 |---|---|---|
+| [**Thrill AI**](https://thrill.vision/) 🏢 | The company I founded: AI voice ordering for Indian restaurants, taking orders in 22+ languages and automating the service loop *(product site; source is private)* | Voice AI · Multilingual NLU |
+| [**Aegis**](https://github.com/Lingikaushikreddy/Aegis) · [live](https://aegis-khaki.vercel.app) | Privacy-first personal data vault: models train on your data **on your device**, and only weight updates leave it. Rust core with chunked AES-256-GCM so files larger than memory can be streamed | Rust · Python · Next.js |
 | [**aegiseval**](https://github.com/Lingikaushikreddy/aegiseval) | Adversarial safety evaluation for a tool-using RAG agent: threat model, 260-prompt golden set, validated LLM-as-judge, mitigations measured before and after | Python · RAG · red teaming |
 | [**MerchantLens**](https://github.com/Lingikaushikreddy/MerchantLens) | Merchant analytics lakehouse on Databricks where access rules are enforced by the query engine, not by asking the agent nicely | Databricks · Delta · Unity Catalog |
 | [**pulse**](https://github.com/Lingikaushikreddy/pulse) | Realtime task board that shows its own latency budget live: <100 ms per interaction, <200 ms to sync | Next.js · tRPC · realtime |
-| [**parallel-researcher**](https://github.com/Lingikaushikreddy/parallel-researcher) | Research engine that splits a question into parallel threads and returns confidence-scored citations. CLI, library and MCP server | Python · asyncio · MCP |
 | [**Contract & Invoice Intelligence**](https://github.com/Lingikaushikreddy/Thrill-AI-Contract-Invoice-Intelligence-System) | Checks invoices against their contracts, flags mismatches and risky clauses, tracks precision/recall/F1 | LangGraph · Qdrant · Next.js |
-| [**three-tier-devops**](https://github.com/Lingikaushikreddy/three-tier-devops) | nginx → Flask → PostgreSQL with Prometheus and Grafana; CI breaks the database on purpose to prove the alerts fire | Docker Compose · GitHub Actions |
 
 ---
 
