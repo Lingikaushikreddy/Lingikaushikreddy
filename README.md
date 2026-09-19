@@ -4,7 +4,7 @@
 
 **I build systems that score, rank and verify — then measure whether they worked.**
 
-Data analyst and systems builder · MS Data Analytics, George Mason '25 · Virginia, USA
+Data analyst and systems builder · MS data science enginnering, George Mason '25 · Virginia, USA
 
 [![Website](https://img.shields.io/badge/kaushikreddy.in-1f2328?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kaushikreddy.in)
 [![Email](https://img.shields.io/badge/Email-c14438?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaushikreddylingireddy2002@gmail.com)
