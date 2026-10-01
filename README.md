@@ -4,7 +4,7 @@
 
 **I build systems that score, rank and verify — then measure whether they worked.**
 
-Data analyst and systems builder · MS data science enginnering, George Mason '25 · Virginia, USA
+Data analyst and systems builder · Founder of [Thrill AI](https://thrill.vision/) · MS Data Analytics, George Mason '25
 
 [![Website](https://img.shields.io/badge/kaushikreddy.in-1f2328?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kaushikreddy.in)
 [![Email](https://img.shields.io/badge/Email-c14438?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaushikreddylingireddy2002@gmail.com)
@@ -14,16 +14,28 @@ Data analyst and systems builder · MS data science enginnering, George Mason '2
 
 ---
 
+## 📦 Shipped this week
+
+Two installable packages, both at v0.1 with CI and a no-keys demo:
+
+| Package | What it does | Install |
+|---|---|---|
+| [**IndicOrderBench**](https://github.com/Lingikaushikreddy/indicorderbench) | Benchmark and CI gate that catches voice ordering agents committing the **wrong order**, in English and Hinglish. It checks the order the agent submitted to the backend, not the transcript, so a convincing read-back can still fail | [![PyPI](https://img.shields.io/pypi/v/indicorderbench?style=flat-square&label=pip%20install%20indicorderbench)](https://pypi.org/project/indicorderbench/) |
+| [**aegis-shred**](https://github.com/Lingikaushikreddy/Aegis) | Crypto-shredding for application data: one encryption key per user, so erasing a person destroys one key and every copy of their data becomes unreadable, backups included. Rust core, Python package, `aegis` CLI. Alpha, not yet independently audited | [![PyPI](https://img.shields.io/pypi/v/aegis-shred?style=flat-square&label=pip%20install%20aegis-shred)](https://pypi.org/project/aegis-shred/) |
+
+---
+
 ## 🏘️ Currently building — Settlement
 
 **A multi-agent village strategy game, and an inspectable AI simulation lab.** Set one objective; six residents bid for jobs, walk to workplaces, gather, build and recruit. You can open any resident and read *why* it took that job, what it remembers, and what it spent. Runs locally with **no API key, account or database**.
 
+[![Play in the browser](https://img.shields.io/badge/Play_in_the_browser-38664a?style=flat-square&logo=vercel&logoColor=white)](https://settlement-village.vercel.app)
 [![Repo](https://img.shields.io/badge/Settlement--Village-3178c6?style=flat-square&logo=github&logoColor=white)](https://github.com/Lingikaushikreddy/Settlement-Village)
 [![CI](https://github.com/Lingikaushikreddy/Settlement-Village/actions/workflows/ci.yml/badge.svg)](https://github.com/Lingikaushikreddy/Settlement-Village/actions/workflows/ci.yml)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square)
 ![License](https://img.shields.io/badge/MIT-d9bd75?style=flat-square)
 
-[![Settlement gameplay: an isometric village, six residents and an army](https://raw.githubusercontent.com/Lingikaushikreddy/Settlement-Village/main/docs/media/village.png)](https://github.com/Lingikaushikreddy/Settlement-Village)
+[![Settlement gameplay: an isometric village, six residents and an army](https://raw.githubusercontent.com/Lingikaushikreddy/Settlement-Village/main/docs/media/village.png)](https://settlement-village.vercel.app)
 
 | Inside it | |
 |---|---|
@@ -36,16 +48,17 @@ Data analyst and systems builder · MS data science enginnering, George Mason '2
 
 ## 🔧 Open source contributions
 
-Fixes and features shipped into projects I use. Every bug here was reproduced before it was fixed:
+Fixes and features shipped into projects I use. Every bug here was reproduced before it was fixed, and every fix was verified through the path the docs describe:
 
 | Project | Contribution | Status |
 |---|---|---|
-| [**libredb-studio**](https://github.com/libredb/libredb-studio) ★790 | [One-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947) — Compose + Caddy TLS + preconfigured realm — and three security-docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940)) | ✅ merged |
+| [**libredb-studio**](https://github.com/libredb/libredb-studio) ★1.0k | [One-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947) (Compose + Caddy TLS + preconfigured realm), two follow-ups binding the demo stacks to loopback only ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)) and three security-docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940)) | ✅ 6 merged · 🔄 [#1119](https://github.com/libredb/libredb-studio/pull/1119) in review |
 | [**BizzAI**](https://github.com/orion-ai-community/BizzAI) ★30 | Return-refund options with a customer-credit system ([#186](https://github.com/orion-ai-community/BizzAI/pull/186)) and an infrastructure upgrade ([#178](https://github.com/orion-ai-community/BizzAI/pull/178)) for this open-source POS and inventory system | ✅ merged |
-| [**Backlog.md**](https://github.com/MrLesk/Backlog.md) ★6.8k | [Git fetch no longer fails](https://github.com/MrLesk/Backlog.md/pull/1023) when the only remote isn't named `origin`, with a regression test | 🔄 in review |
-| [**tunarr**](https://github.com/chrisbenincasa/tunarr) ★2.6k | [Fixer for mislabelled Jellyfin/Emby rows](https://github.com/chrisbenincasa/tunarr/pull/2112) that made guide endpoints return 500 | 🔄 in review |
+| [**Backlog.md**](https://github.com/MrLesk/Backlog.md) ★6.9k | [Git fetch no longer fails](https://github.com/MrLesk/Backlog.md/pull/1023) when the only remote isn't named `origin`, with a regression test | 🔄 in review |
 | [**PasarGuard**](https://github.com/PasarGuard/panel) ★2.6k | [Clipboard copy inside focus-trapped menus](https://github.com/PasarGuard/panel/pull/907) on plain-HTTP deployments | 🔄 in review |
-| [**httpx2**](https://github.com/pydantic/httpx2) ★1.4k | [Contributing docs point at the discussion categories that exist](https://github.com/pydantic/httpx2/pull/1213) | 🔄 in review |
+| [**tunarr**](https://github.com/chrisbenincasa/tunarr) ★2.6k | [Fixer for mislabelled Jellyfin/Emby rows](https://github.com/chrisbenincasa/tunarr/pull/2112) that made guide endpoints return 500, with idempotency and false-positive guard tests | 🔄 in review |
+| [**NVIDIA NeMo Curator**](https://github.com/NVIDIA-NeMo/Curator) ★1.8k | [Batched processing in the MinHash dedup stage](https://github.com/NVIDIA-NeMo/Curator/pull/2423) | 🔄 in review |
+| [**httpx2**](https://github.com/pydantic/httpx2) ★1.5k | [Contributing docs point at the discussion categories that exist](https://github.com/pydantic/httpx2/pull/1213) | 🔄 in review |
 
 ---
 
@@ -54,11 +67,11 @@ Fixes and features shipped into projects I use. Every bug here was reproduced be
 | Project | What it does | Stack |
 |---|---|---|
 | [**Thrill AI**](https://thrill.vision/) 🏢 | The company I founded: AI voice ordering for Indian restaurants, taking orders in 22+ languages and automating the service loop *(product site; source is private)* | Voice AI · Multilingual NLU |
-| [**Aegis**](https://github.com/Lingikaushikreddy/Aegis) · [live](https://aegis-khaki.vercel.app) | Privacy-first personal data vault: models train on your data **on your device**, and only weight updates leave it. Rust core with chunked AES-256-GCM so files larger than memory can be streamed | Rust · Python · Next.js |
 | [**aegiseval**](https://github.com/Lingikaushikreddy/aegiseval) | Adversarial safety evaluation for a tool-using RAG agent: threat model, 260-prompt golden set, validated LLM-as-judge, mitigations measured before and after | Python · RAG · red teaming |
 | [**MerchantLens**](https://github.com/Lingikaushikreddy/MerchantLens) | Merchant analytics lakehouse on Databricks where access rules are enforced by the query engine, not by asking the agent nicely | Databricks · Delta · Unity Catalog |
 | [**pulse**](https://github.com/Lingikaushikreddy/pulse) | Realtime task board that shows its own latency budget live: <100 ms per interaction, <200 ms to sync | Next.js · tRPC · realtime |
 | [**Contract & Invoice Intelligence**](https://github.com/Lingikaushikreddy/Thrill-AI-Contract-Invoice-Intelligence-System) | Checks invoices against their contracts, flags mismatches and risky clauses, tracks precision/recall/F1 | LangGraph · Qdrant · Next.js |
+| [**rocm-devops-starter**](https://github.com/Lingikaushikreddy/rocm-devops-starter) | Probe, smoke-test training run, ROCm container and CI for PyTorch on AMD GPUs, plus a portability scanner that reads a repo without importing it. Status table says exactly what has run on real hardware | Python · PyTorch · Docker |
 
 ---
 
@@ -105,6 +118,6 @@ Fixes and features shipped into projects I use. Every bug here was reproduced be
 
 ### 🌱 Now
 
-Prometheus, Terraform and Kubernetes · more agent work in [Settlement](https://github.com/Lingikaushikreddy/Settlement-Village) · open to data analyst, analytics engineering and AI engineering roles.
+Taking IndicOrderBench and aegis-shred from v0.1 to their first outside users · Prometheus, Terraform and Kubernetes · more agent work in [Settlement](https://github.com/Lingikaushikreddy/Settlement-Village) · open to data analyst, analytics engineering and AI engineering roles.
 
 <sub>If a project here is useful to you, a ⭐ or an issue is always welcome.</sub>
