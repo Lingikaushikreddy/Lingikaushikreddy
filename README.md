@@ -2,122 +2,82 @@
 
 # Kaushik Reddy Lingireddy
 
-**I build systems that score, rank and verify — then measure whether they worked.**
+### I build AI systems that can prove they did the right thing.
 
-Data analyst and systems builder · Founder of [Thrill AI](https://thrill.vision/) · MS Data Science Engineering, George Mason '25
+Benchmarks that check what an agent actually *committed*, agents whose every decision is inspectable,<br/>
+and the data plumbing underneath. Founder of [Thrill AI](https://thrill.vision/) · MS Data Science Engineering, George Mason '25.
 
-[![Website](https://img.shields.io/badge/kaushikreddy.in-1f2328?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kaushikreddy.in)
-[![Email](https://img.shields.io/badge/Email-c14438?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaushikreddylingireddy2002@gmail.com)
-[![GitHub](https://img.shields.io/badge/Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lingikaushikreddy)
+[![Website](https://img.shields.io/badge/kaushikreddy.in-1f2328?style=flat-square&logo=googlechrome&logoColor=white)](https://kaushikreddy.in)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lingireddy-kaushik-reddy-995b54440)
+[![Email](https://img.shields.io/badge/Email-c14438?style=flat-square&logo=gmail&logoColor=white)](mailto:kaushikreddylingireddy2002@gmail.com)
 
 </div>
 
 ---
 
-## 📦 Shipped this week
+## Flagship projects
 
-Two installable packages, both at v0.1 with CI and a no-keys demo:
+### 🏘️ [Settlement](https://github.com/Lingikaushikreddy/Settlement-Village): a village sim where you can read why every agent did what it did
 
-| Package | What it does | Install |
-|---|---|---|
-| [**IndicOrderBench**](https://github.com/Lingikaushikreddy/indicorderbench) | Benchmark and CI gate that catches voice ordering agents committing the **wrong order**, in English and Hinglish. It checks the order the agent submitted to the backend, not the transcript, so a convincing read-back can still fail | [![PyPI](https://img.shields.io/pypi/v/indicorderbench?style=flat-square&label=pip%20install%20indicorderbench)](https://pypi.org/project/indicorderbench/) |
-| [**aegis-shred**](https://github.com/Lingikaushikreddy/Aegis) | Crypto-shredding for application data: one encryption key per user, so erasing a person destroys one key and every copy of their data becomes unreadable, backups included. Rust core, Python package, `aegis` CLI. Alpha, not yet independently audited | [![PyPI](https://img.shields.io/pypi/v/aegis-shred?style=flat-square&label=pip%20install%20aegis-shred)](https://pypi.org/project/aegis-shred/) |
+Six residents bid for jobs, gather, build and recruit toward one objective you set. Open any of them to see the decision, the route and the memory behind it. It doubles as a testbed: point `npx settlement-testbed` at your own agent's HTTP endpoint and get a report anyone can re-verify.
+
+[![Play in your browser](https://img.shields.io/badge/%E2%96%B6_Play_in_your_browser-no_signup,_no_API_key-38664a?style=for-the-badge)](https://settlement-village.vercel.app)
+[![npm](https://img.shields.io/npm/v/settlement-testbed?style=for-the-badge&label=npx%20settlement-testbed&color=cb3837)](https://www.npmjs.com/package/settlement-testbed)
+
+<a href="https://settlement-village.vercel.app"><img src="https://raw.githubusercontent.com/Lingikaushikreddy/Settlement-Village/main/docs/media/settlement-demo.gif" alt="Settlement: start Grow the village, residents gather and build, then the log shows why each one claimed its job" width="760"></a>
+
+### 🛒 [IndicOrderBench](https://github.com/Lingikaushikreddy/indicorderbench): catches voice agents that place the wrong order
+
+A voice agent can read back "one paneer wrap, no onion" and still commit two wraps with onion. IndicOrderBench scores the order that actually reached the backend, in English and Hinglish, with a CI exit code. No judge model, and the demo needs no API keys.
+
+[![PyPI](https://img.shields.io/pypi/v/indicorderbench?style=flat-square&label=pip%20install%20indicorderbench)](https://pypi.org/project/indicorderbench/)
+
+```bash
+uvx --from indicorderbench iob demo --out demo-out
+```
+
+<img src="https://raw.githubusercontent.com/Lingikaushikreddy/indicorderbench/main/docs/images/iob-demo.gif" alt="iob demo: the buggy agent passes 20% of scenarios, the fixed one 100%" width="760">
+
+### 🔐 [aegis-shred](https://github.com/Lingikaushikreddy/Aegis): delete a user by destroying one key
+
+Crypto-shredding for application data: each user gets their own encryption key, so erasing a person makes every copy of their data unreadable, backups included. Rust core, Python package, `aegis` CLI. Alpha, not yet independently audited.
+
+[![PyPI](https://img.shields.io/pypi/v/aegis-shred?style=flat-square&label=pip%20install%20aegis-shred)](https://pypi.org/project/aegis-shred/)
 
 ---
 
-## 🏘️ Currently building — Settlement
+## Open source contributions
 
-**A multi-agent village strategy game, and an inspectable AI simulation lab.** Set one objective; six residents bid for jobs, walk to workplaces, gather, build and recruit. You can open any resident and read *why* it took that job, what it remembers, and what it spent. Runs locally with **no API key, account or database**.
+I reproduce the bug before fixing it, and verify the fix through the path the docs describe.
 
-[![Play in the browser](https://img.shields.io/badge/Play_in_the_browser-38664a?style=flat-square&logo=vercel&logoColor=white)](https://settlement-village.vercel.app)
-[![Repo](https://img.shields.io/badge/Settlement--Village-3178c6?style=flat-square&logo=github&logoColor=white)](https://github.com/Lingikaushikreddy/Settlement-Village)
-[![CI](https://github.com/Lingikaushikreddy/Settlement-Village/actions/workflows/ci.yml/badge.svg)](https://github.com/Lingikaushikreddy/Settlement-Village/actions/workflows/ci.yml)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square)
-![License](https://img.shields.io/badge/MIT-d9bd75?style=flat-square)
-
-[![Settlement gameplay: an isometric village, six residents and an army](https://raw.githubusercontent.com/Lingikaushikreddy/Settlement-Village/main/docs/media/village.png)](https://settlement-village.vercel.app)
-
-| Inside it | |
-|---|---|
-| **Agents that explain themselves** | Jobs are claimed by bidding on role fit, distance and bounded experience; every decision, memory and spend is inspectable |
-| **A real game around it** | Six building types, two builders, treasury, knights/archers/catapults, three enemy strongholds |
-| **A research desk** | Matched seeds, replayable evidence, JSON/CSV export — every recorded result reproducible |
-| **Optional live models** | Claude can propose a social action in a local-worker experiment, with validated actions and spend reservations |
-
----
-
-## 🔧 Open source contributions
-
-Fixes and features shipped into projects I use. Every bug here was reproduced before it was fixed, and every fix was verified through the path the docs describe:
-
-| Project | Contribution | Status |
+| Project | What I did | Status |
 |---|---|---|
-| [**libredb-studio**](https://github.com/libredb/libredb-studio) ★1.0k | [One-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947) (Compose + Caddy TLS + preconfigured realm), two follow-ups binding the demo stacks to loopback only ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)) and three security-docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940)) | ✅ 6 merged · 🔄 [#1119](https://github.com/libredb/libredb-studio/pull/1119) in review |
-| [**BizzAI**](https://github.com/orion-ai-community/BizzAI) ★30 | Return-refund options with a customer-credit system ([#186](https://github.com/orion-ai-community/BizzAI/pull/186)) and an infrastructure upgrade ([#178](https://github.com/orion-ai-community/BizzAI/pull/178)) for this open-source POS and inventory system | ✅ merged |
-| [**Backlog.md**](https://github.com/MrLesk/Backlog.md) ★6.9k | [Git fetch no longer fails](https://github.com/MrLesk/Backlog.md/pull/1023) when the only remote isn't named `origin`, with a regression test | 🔄 in review |
-| [**PasarGuard**](https://github.com/PasarGuard/panel) ★2.6k | [Clipboard copy inside focus-trapped menus](https://github.com/PasarGuard/panel/pull/907) on plain-HTTP deployments | 🔄 in review |
-| [**tunarr**](https://github.com/chrisbenincasa/tunarr) ★2.6k | [Fixer for mislabelled Jellyfin/Emby rows](https://github.com/chrisbenincasa/tunarr/pull/2112) that made guide endpoints return 500, with idempotency and false-positive guard tests | 🔄 in review |
+| [**libredb-studio**](https://github.com/libredb/libredb-studio) ★1.0k | [One-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947), loopback-only demo stacks ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)), three security-docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940)) | ✅ 6 merged · listed in CONTRIBUTORS · 🔄 [#1119](https://github.com/libredb/libredb-studio/pull/1119) |
+| [**BizzAI**](https://github.com/orion-ai-community/BizzAI) | Return-refund options with customer credit ([#186](https://github.com/orion-ai-community/BizzAI/pull/186)), infrastructure upgrade ([#178](https://github.com/orion-ai-community/BizzAI/pull/178)) | ✅ merged |
 | [**NVIDIA NeMo Curator**](https://github.com/NVIDIA-NeMo/Curator) ★1.8k | [Batched processing in the MinHash dedup stage](https://github.com/NVIDIA-NeMo/Curator/pull/2423) | 🔄 in review |
-| [**httpx2**](https://github.com/pydantic/httpx2) ★1.5k | [Contributing docs point at the discussion categories that exist](https://github.com/pydantic/httpx2/pull/1213) | 🔄 in review |
+| [**tunarr**](https://github.com/chrisbenincasa/tunarr) ★2.6k | [Fixer for mislabelled Jellyfin/Emby rows](https://github.com/chrisbenincasa/tunarr/pull/2112) that made guide endpoints return 500 | 🔄 in review |
+| [**Backlog.md**](https://github.com/MrLesk/Backlog.md) ★6.9k | [Git fetch works when the only remote isn't `origin`](https://github.com/MrLesk/Backlog.md/pull/1023) | 🔄 in review |
+| [**PasarGuard**](https://github.com/PasarGuard/panel) ★2.6k | [Clipboard copy inside focus-trapped menus](https://github.com/PasarGuard/panel/pull/907) on plain-HTTP deployments | 🔄 in review |
+| [**httpx2**](https://github.com/pydantic/httpx2) ★1.5k | [Contributing docs point at discussion categories that exist](https://github.com/pydantic/httpx2/pull/1213) | 🔄 in review |
 
 ---
 
-## 🚀 Selected projects
+## More I've built
 
-| Project | What it does | Stack |
-|---|---|---|
-| [**Thrill AI**](https://thrill.vision/) 🏢 | The company I founded: AI voice ordering for Indian restaurants, taking orders in 22+ languages and automating the service loop *(product site; source is private)* | Voice AI · Multilingual NLU |
-| [**aegiseval**](https://github.com/Lingikaushikreddy/aegiseval) | Adversarial safety evaluation for a tool-using RAG agent: threat model, 260-prompt golden set, validated LLM-as-judge, mitigations measured before and after | Python · RAG · red teaming |
-| [**MerchantLens**](https://github.com/Lingikaushikreddy/MerchantLens) | Merchant analytics lakehouse on Databricks where access rules are enforced by the query engine, not by asking the agent nicely | Databricks · Delta · Unity Catalog |
-| [**pulse**](https://github.com/Lingikaushikreddy/pulse) | Realtime task board that shows its own latency budget live: <100 ms per interaction, <200 ms to sync | Next.js · tRPC · realtime |
-| [**Contract & Invoice Intelligence**](https://github.com/Lingikaushikreddy/Thrill-AI-Contract-Invoice-Intelligence-System) | Checks invoices against their contracts, flags mismatches and risky clauses, tracks precision/recall/F1 | LangGraph · Qdrant · Next.js |
-| [**rocm-devops-starter**](https://github.com/Lingikaushikreddy/rocm-devops-starter) | Probe, smoke-test training run, ROCm container and CI for PyTorch on AMD GPUs, plus a portability scanner that reads a repo without importing it. Status table says exactly what has run on real hardware | Python · PyTorch · Docker |
+| | |
+|---|---|
+| [**aegiseval**](https://github.com/Lingikaushikreddy/aegiseval) | Red-teaming a tool-using RAG agent: threat model, 260-prompt golden set, validated LLM judge, mitigations measured before and after |
+| [**MerchantLens**](https://github.com/Lingikaushikreddy/MerchantLens) | Databricks lakehouse where access rules are enforced by the query engine, not by asking the agent nicely |
+| [**mcp-rust-sdk**](https://github.com/Lingikaushikreddy/mcp-rust-sdk) | Rust SDK for building Model Context Protocol servers |
+| [**pulse**](https://github.com/Lingikaushikreddy/pulse) | Realtime task board that shows its own latency budget live |
+| [**rocm-devops-starter**](https://github.com/Lingikaushikreddy/rocm-devops-starter) | Probe, smoke-test training run, container and CI for PyTorch on AMD GPUs, with a table of exactly what ran on real hardware |
+| [**Contract & Invoice Intelligence**](https://github.com/Lingikaushikreddy/Thrill-AI-Contract-Invoice-Intelligence-System) | Checks invoices against their contracts and tracks precision/recall/F1 on the flags |
 
----
-
-## 🧰 Tech
-
-**Analysis**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
-
-**AI systems**
-![LangGraph](https://img.shields.io/badge/LangGraph-1c3c3c?style=flat-square&logo=langchain&logoColor=white)
-![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square&logo=anthropic&logoColor=white)
-![Qdrant](https://img.shields.io/badge/Qdrant-24386C?style=flat-square&logo=qdrant&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
-
-**Engineering**
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-
-**Ops**
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Postgres](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+**Stack I reach for:** Python · TypeScript · Rust · SQL · FastAPI · Next.js · LangGraph · MCP · Databricks · Postgres · Docker · GitHub Actions
 
 ---
 
-<div align="center">
+**Now:** getting IndicOrderBench and aegis-shred to their first outside users, and publishing measured ordering accuracy for real LLM voice stacks.
+Open to **AI engineering, data/analytics engineering and data analyst** roles.
 
-<img height="150" src="https://github-readme-stats.shion.dev/api?username=Lingikaushikreddy&theme=tokyonight&hide_border=true&border_radius=10&include_all_commits=true&count_private=true&show_icons=true" alt="GitHub stats" />
-<img height="150" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Lingikaushikreddy&theme=tokyonight&hide_border=true&border_radius=10&layout=compact&langs_count=8" alt="Top languages" />
-
-</div>
-
----
-
-### 🌱 Now
-
-Taking IndicOrderBench and aegis-shred from v0.1 to their first outside users · Prometheus, Terraform and Kubernetes · more agent work in [Settlement](https://github.com/Lingikaushikreddy/Settlement-Village) · open to data analyst, analytics engineering and AI engineering roles.
-
-<sub>If a project here is useful to you, a ⭐ or an issue is always welcome.</sub>
+<sub>If something here is useful to you, a ⭐ or an issue with a real failure you've seen helps more than anything.</sub>
