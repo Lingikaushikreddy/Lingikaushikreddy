@@ -46,6 +46,12 @@ Crypto-shredding for application data: each user gets their own encryption key, 
 
 ---
 
+## Open source
+
+**[libredb-studio](https://github.com/libredb/libredb-studio)** ★1.0k: 6 merged PRs and listed in CONTRIBUTORS. I built the [one-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947), bound the demo stacks to loopback only ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)) and shipped three security-docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940)). [#1119](https://github.com/libredb/libredb-studio/pull/1119) is in review.
+
+---
+
 ## More I've built
 
 | | |
