@@ -5,7 +5,7 @@
 ### I build AI systems that can prove they did the right thing.
 
 Benchmarks that check what an agent actually *committed*, agents whose every decision is inspectable,<br/>
-and the data plumbing underneath. Founder of [Thrill AI](https://thrill.vision/) · MS Data Science Engineering, George Mason '25.
+and the data plumbing underneath. Founder of [Thrill AI](https://thrill.vision/) · MS in Data Science, George Mason '25.
 
 [![Website](https://img.shields.io/badge/kaushikreddy.in-1f2328?style=flat-square&logo=googlechrome&logoColor=white)](https://kaushikreddy.in)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lingireddy-kaushik-reddy-995b54440)
