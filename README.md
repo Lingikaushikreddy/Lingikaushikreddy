@@ -46,22 +46,6 @@ Crypto-shredding for application data: each user gets their own encryption key, 
 
 ---
 
-## Open source contributions
-
-I reproduce the bug before fixing it, and verify the fix through the path the docs describe.
-
-| Project | What I did | Status |
-|---|---|---|
-| [**libredb-studio**](https://github.com/libredb/libredb-studio) ★1.0k | [One-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947), loopback-only demo stacks ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)), three security-docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940)) | ✅ 6 merged · listed in CONTRIBUTORS · 🔄 [#1119](https://github.com/libredb/libredb-studio/pull/1119) |
-| [**BizzAI**](https://github.com/orion-ai-community/BizzAI) | Return-refund options with customer credit ([#186](https://github.com/orion-ai-community/BizzAI/pull/186)), infrastructure upgrade ([#178](https://github.com/orion-ai-community/BizzAI/pull/178)) | ✅ merged |
-| [**NVIDIA NeMo Curator**](https://github.com/NVIDIA-NeMo/Curator) ★1.8k | [Batched processing in the MinHash dedup stage](https://github.com/NVIDIA-NeMo/Curator/pull/2423) | 🔄 in review |
-| [**tunarr**](https://github.com/chrisbenincasa/tunarr) ★2.6k | [Fixer for mislabelled Jellyfin/Emby rows](https://github.com/chrisbenincasa/tunarr/pull/2112) that made guide endpoints return 500 | 🔄 in review |
-| [**Backlog.md**](https://github.com/MrLesk/Backlog.md) ★6.9k | [Git fetch works when the only remote isn't `origin`](https://github.com/MrLesk/Backlog.md/pull/1023) | 🔄 in review |
-| [**PasarGuard**](https://github.com/PasarGuard/panel) ★2.6k | [Clipboard copy inside focus-trapped menus](https://github.com/PasarGuard/panel/pull/907) on plain-HTTP deployments | 🔄 in review |
-| [**httpx2**](https://github.com/pydantic/httpx2) ★1.5k | [Contributing docs point at discussion categories that exist](https://github.com/pydantic/httpx2/pull/1213) | 🔄 in review |
-
----
-
 ## More I've built
 
 | | |
