@@ -48,7 +48,11 @@ Crypto-shredding for application data: each user gets their own encryption key, 
 
 ## Open source
 
-**[libredb-studio](https://github.com/libredb/libredb-studio)** ★1.0k: 8 merged PRs and listed in CONTRIBUTORS. I built the [one-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947), fixed MySQL schema diffs [emitting unquoted column defaults](https://github.com/libredb/libredb-studio/pull/1119), bound the demo stacks to loopback only ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)) and shipped four docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940), [#1657](https://github.com/libredb/libredb-studio/pull/1657)).
+**[roboflow/supervision](https://github.com/roboflow/supervision)** ★51k: 4 merged fixes to the metrics, dataset and image code. Mean average recall now [leaves crowd and ignored targets out](https://github.com/roboflow/supervision/pull/2750), oriented-box IoU is [compared with the thresholds in float32](https://github.com/roboflow/supervision/pull/2752) the way box IoU is, Pascal VOC export [rounds box corners instead of truncating them](https://github.com/roboflow/supervision/pull/2748), and the resize fallback [matches OpenCV's nearest-neighbour sampling](https://github.com/roboflow/supervision/pull/2722).
+
+**[libredb-studio](https://github.com/libredb/libredb-studio)** ★1.3k: 8 merged PRs and listed in CONTRIBUTORS. I built the [one-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947), fixed MySQL schema diffs [emitting unquoted column defaults](https://github.com/libredb/libredb-studio/pull/1119), bound the demo stacks to loopback only ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)) and shipped four docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940), [#1657](https://github.com/libredb/libredb-studio/pull/1657)).
+
+Also merged: [sqlfluff #8664](https://github.com/sqlfluff/sqlfluff/pull/8664) (honour inline dialect directives when loading SQL files), [pydantic/httpx2 #1213](https://github.com/pydantic/httpx2/pull/1213), [roboflow-python #551](https://github.com/roboflow/roboflow-python/pull/551) and [PasarGuard/panel #907](https://github.com/PasarGuard/panel/pull/907).
 
 ---
 
@@ -58,6 +62,9 @@ Crypto-shredding for application data: each user gets their own encryption key, 
 |---|---|
 | [**aegiseval**](https://github.com/Lingikaushikreddy/aegiseval) | Red-teaming a tool-using RAG agent: threat model, 260-prompt golden set, validated LLM judge, mitigations measured before and after |
 | [**MerchantLens**](https://github.com/Lingikaushikreddy/MerchantLens) | Databricks lakehouse where access rules are enforced by the query engine, not by asking the agent nicely |
+| [**release-lens**](https://github.com/Lingikaushikreddy/release-lens) | Shows exactly what changed between two npm tarballs (byte growth, file hashes, manifest changes) without installing either one. [Browser app](https://lingikaushikreddy.github.io/release-lens/) and an npm CLI |
+| [**Village Sentinel**](https://github.com/Lingikaushikreddy/Village-Sentinel) | A village governance agent: a small Decider model makes each call, checks the evidence when it's unsure and escalates to Amazon Bedrock only when that doesn't settle it. [Playable in the browser](https://lingikaushikreddy.github.io/Village-Sentinel/) |
+| [**focus-trail**](https://github.com/Lingikaushikreddy/focus-trail) | Records keyboard focus journeys in existing Playwright tests and flags the first checkpoint that changed against a reviewed baseline |
 | [**mcp-rust-sdk**](https://github.com/Lingikaushikreddy/mcp-rust-sdk) | Rust SDK for building Model Context Protocol servers |
 | [**pulse**](https://github.com/Lingikaushikreddy/pulse) | Realtime task board that shows its own latency budget live |
 | [**rocm-devops-starter**](https://github.com/Lingikaushikreddy/rocm-devops-starter) | Probe, smoke-test training run, container and CI for PyTorch on AMD GPUs, with a table of exactly what ran on real hardware |
@@ -67,7 +74,7 @@ Crypto-shredding for application data: each user gets their own encryption key, 
 
 ---
 
-**Now:** getting IndicOrderBench and aegis-shred to their first outside users, and publishing measured ordering accuracy for real LLM voice stacks.
+**Now:** going deeper in Roboflow's computer-vision libraries, getting IndicOrderBench and aegis-shred to their first outside users, and publishing measured ordering accuracy for real LLM voice stacks.
 Open to **AI engineering, data/analytics engineering and data analyst** roles.
 
 <sub>If something here is useful to you, a ⭐ or an issue with a real failure you've seen helps more than anything.</sub>
