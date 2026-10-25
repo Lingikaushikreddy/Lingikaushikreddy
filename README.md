@@ -15,9 +15,21 @@ and the data plumbing underneath. Founder of [Thrill AI](https://thrill.vision/)
 
 ---
 
+## Open source
+
+**20 merged pull requests across 9 repositories**, including Roboflow, pydantic and sqlfluff.
+
+**[roboflow/supervision](https://github.com/roboflow/supervision)** ★51k: 4 merged fixes to the metrics, dataset and image code. Mean average recall now [leaves crowd and ignored targets out](https://github.com/roboflow/supervision/pull/2750), oriented-box IoU is [compared with the thresholds in float32](https://github.com/roboflow/supervision/pull/2752) the way box IoU is, Pascal VOC export [rounds box corners instead of truncating them](https://github.com/roboflow/supervision/pull/2748), and the resize fallback [matches OpenCV's nearest-neighbour sampling](https://github.com/roboflow/supervision/pull/2722).
+
+**[libredb-studio](https://github.com/libredb/libredb-studio)** ★1.3k: 8 merged PRs and listed in CONTRIBUTORS. I built the [one-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947), fixed MySQL schema diffs [emitting unquoted column defaults](https://github.com/libredb/libredb-studio/pull/1119), bound the demo stacks to loopback only ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)) and shipped four docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940), [#1657](https://github.com/libredb/libredb-studio/pull/1657)).
+
+Also merged: [sqlfluff #8664](https://github.com/sqlfluff/sqlfluff/pull/8664) (honour inline dialect directives when loading SQL files), [pydantic/httpx2 #1213](https://github.com/pydantic/httpx2/pull/1213), [roboflow-python #551](https://github.com/roboflow/roboflow-python/pull/551) and [PasarGuard/panel #907](https://github.com/PasarGuard/panel/pull/907).
+
+---
+
 ## Flagship projects
 
-### 🏘️ [Settlement](https://github.com/Lingikaushikreddy/Settlement-Village): a village sim where you can read why every agent did what it did
+### [Settlement](https://github.com/Lingikaushikreddy/Settlement-Village): a multi-agent simulation with an inspectable decision trail
 
 Six residents bid for jobs, gather, build and recruit toward one objective you set. Open any of them to see the decision, the route and the memory behind it. It doubles as a testbed: point `npx settlement-testbed` at your own agent's HTTP endpoint and get a report anyone can re-verify.
 
@@ -26,7 +38,7 @@ Six residents bid for jobs, gather, build and recruit toward one objective you s
 
 <a href="https://settlement-village.vercel.app"><img src="https://raw.githubusercontent.com/Lingikaushikreddy/Settlement-Village/main/docs/media/settlement-demo.gif" alt="Settlement: start Grow the village, residents gather and build, then the log shows why each one claimed its job" width="760"></a>
 
-### 🛒 [IndicOrderBench](https://github.com/Lingikaushikreddy/indicorderbench): catches voice agents that place the wrong order
+### [IndicOrderBench](https://github.com/Lingikaushikreddy/indicorderbench): a benchmark for voice-ordering agents
 
 A voice agent can read back "one paneer wrap, no onion" and still commit two wraps with onion. IndicOrderBench scores the order that actually reached the backend, in English and Hinglish, with a CI exit code. No judge model, and the demo needs no API keys.
 
@@ -38,7 +50,7 @@ uvx --from indicorderbench iob demo --out demo-out
 
 <img src="https://raw.githubusercontent.com/Lingikaushikreddy/indicorderbench/main/docs/images/iob-demo.gif" alt="iob demo: the buggy agent passes 20% of scenarios, the fixed one 100%" width="760">
 
-### 🔐 [aegis-shred](https://github.com/Lingikaushikreddy/Aegis): delete a user by destroying one key
+### [aegis-shred](https://github.com/Lingikaushikreddy/Aegis): crypto-shredding for user data erasure
 
 Crypto-shredding for application data: each user gets their own encryption key, so erasing a person makes every copy of their data unreadable, backups included. Rust core, Python package, `aegis` CLI. Alpha, not yet independently audited.
 
@@ -46,35 +58,21 @@ Crypto-shredding for application data: each user gets their own encryption key, 
 
 ---
 
-## Open source
-
-**[roboflow/supervision](https://github.com/roboflow/supervision)** ★51k: 4 merged fixes to the metrics, dataset and image code. Mean average recall now [leaves crowd and ignored targets out](https://github.com/roboflow/supervision/pull/2750), oriented-box IoU is [compared with the thresholds in float32](https://github.com/roboflow/supervision/pull/2752) the way box IoU is, Pascal VOC export [rounds box corners instead of truncating them](https://github.com/roboflow/supervision/pull/2748), and the resize fallback [matches OpenCV's nearest-neighbour sampling](https://github.com/roboflow/supervision/pull/2722).
-
-**[libredb-studio](https://github.com/libredb/libredb-studio)** ★1.3k: 8 merged PRs and listed in CONTRIBUTORS. I built the [one-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947), fixed MySQL schema diffs [emitting unquoted column defaults](https://github.com/libredb/libredb-studio/pull/1119), bound the demo stacks to loopback only ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)) and shipped four docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940), [#1657](https://github.com/libredb/libredb-studio/pull/1657)).
-
-Also merged: [sqlfluff #8664](https://github.com/sqlfluff/sqlfluff/pull/8664) (honour inline dialect directives when loading SQL files), [pydantic/httpx2 #1213](https://github.com/pydantic/httpx2/pull/1213), [roboflow-python #551](https://github.com/roboflow/roboflow-python/pull/551) and [PasarGuard/panel #907](https://github.com/PasarGuard/panel/pull/907).
-
----
-
-## More I've built
+## Selected projects
 
 | | |
 |---|---|
+| [**release-lens**](https://github.com/Lingikaushikreddy/release-lens) | Shows exactly what changed between two npm tarballs (byte growth, file hashes, manifest changes) without installing either one. [Browser app](https://lingikaushikreddy.github.io/release-lens/) and npm CLI |
 | [**aegiseval**](https://github.com/Lingikaushikreddy/aegiseval) | Red-teaming a tool-using RAG agent: threat model, 260-prompt golden set, validated LLM judge, mitigations measured before and after |
-| [**MerchantLens**](https://github.com/Lingikaushikreddy/MerchantLens) | Databricks lakehouse where access rules are enforced by the query engine, not by asking the agent nicely |
-| [**release-lens**](https://github.com/Lingikaushikreddy/release-lens) | Shows exactly what changed between two npm tarballs (byte growth, file hashes, manifest changes) without installing either one. [Browser app](https://lingikaushikreddy.github.io/release-lens/) and an npm CLI |
-| [**Village Sentinel**](https://github.com/Lingikaushikreddy/Village-Sentinel) | A village governance agent: a small Decider model makes each call, checks the evidence when it's unsure and escalates to Amazon Bedrock only when that doesn't settle it. [Playable in the browser](https://lingikaushikreddy.github.io/Village-Sentinel/) |
-| [**focus-trail**](https://github.com/Lingikaushikreddy/focus-trail) | Records keyboard focus journeys in existing Playwright tests and flags the first checkpoint that changed against a reviewed baseline |
+| [**MerchantLens**](https://github.com/Lingikaushikreddy/MerchantLens) | Databricks lakehouse where access rules are enforced by the query engine rather than by the agent |
+| [**Village Sentinel**](https://github.com/Lingikaushikreddy/Village-Sentinel) | Governance agent that routes each decision through a small Decider model, checks evidence when uncertain and escalates to Amazon Bedrock only when needed. [Live demo](https://lingikaushikreddy.github.io/Village-Sentinel/) |
 | [**mcp-rust-sdk**](https://github.com/Lingikaushikreddy/mcp-rust-sdk) | Rust SDK for building Model Context Protocol servers |
-| [**pulse**](https://github.com/Lingikaushikreddy/pulse) | Realtime task board that shows its own latency budget live |
-| [**rocm-devops-starter**](https://github.com/Lingikaushikreddy/rocm-devops-starter) | Probe, smoke-test training run, container and CI for PyTorch on AMD GPUs, with a table of exactly what ran on real hardware |
-| [**Contract & Invoice Intelligence**](https://github.com/Lingikaushikreddy/Thrill-AI-Contract-Invoice-Intelligence-System) | Checks invoices against their contracts and tracks precision/recall/F1 on the flags |
+| [**rocm-devops-starter**](https://github.com/Lingikaushikreddy/rocm-devops-starter) | Probe, smoke-test training run, container and CI for PyTorch on AMD GPUs, with a record of exactly what ran on real hardware |
 
-**Stack I reach for:** Python · TypeScript · Rust · SQL · FastAPI · Next.js · LangGraph · MCP · Databricks · Postgres · Docker · GitHub Actions
+**Core stack:** Python · TypeScript · Rust · SQL · FastAPI · Next.js · LangGraph · MCP · Databricks · Postgres · Docker · GitHub Actions
 
 ---
 
-**Now:** going deeper in Roboflow's computer-vision libraries, getting IndicOrderBench and aegis-shred to their first outside users, and publishing measured ordering accuracy for real LLM voice stacks.
-Open to **AI engineering, data/analytics engineering and data analyst** roles.
+**Current focus:** contributing to Roboflow's computer-vision libraries, bringing IndicOrderBench and aegis-shred to their first external users, and publishing measured ordering accuracy for real LLM voice stacks.
 
-<sub>If something here is useful to you, a ⭐ or an issue with a real failure you've seen helps more than anything.</sub>
+Open to **AI/ML engineering (including computer vision), data engineering and data analyst** roles.
