@@ -17,13 +17,19 @@ and the data plumbing underneath. Founder of [Thrill AI](https://thrill.vision/)
 
 ## Open source
 
-**20 merged pull requests across 9 repositories**, including Roboflow, pydantic and sqlfluff.
+**21 merged pull requests across 10 repositories**, plus 8 more under review in projects such as marimo, beets and Sphinx.
 
-**[roboflow/supervision](https://github.com/roboflow/supervision)** ★51k: 4 merged fixes to the metrics, dataset and image code. Mean average recall now [leaves crowd and ignored targets out](https://github.com/roboflow/supervision/pull/2750), oriented-box IoU is [compared with the thresholds in float32](https://github.com/roboflow/supervision/pull/2752) the way box IoU is, Pascal VOC export [rounds box corners instead of truncating them](https://github.com/roboflow/supervision/pull/2748), and the resize fallback [matches OpenCV's nearest-neighbour sampling](https://github.com/roboflow/supervision/pull/2722).
+| Project | Stars | Merged work |
+|---|---:|---|
+| [**roboflow/supervision**](https://github.com/roboflow/supervision) | 51k | 4 PRs. Mean average recall [excludes crowd and ignored targets](https://github.com/roboflow/supervision/pull/2750), oriented-box IoU is [thresholded in float32](https://github.com/roboflow/supervision/pull/2752) like box IoU, Pascal VOC export [rounds box corners instead of truncating](https://github.com/roboflow/supervision/pull/2748), and the resize fallback [matches OpenCV's nearest-neighbour grid](https://github.com/roboflow/supervision/pull/2722) |
+| [**sqlfluff/sqlfluff**](https://github.com/sqlfluff/sqlfluff) | 10k | [Honour inline dialect directives when loading SQL files](https://github.com/sqlfluff/sqlfluff/pull/8664) |
+| [**MrLesk/Backlog.md**](https://github.com/MrLesk/Backlog.md) | 7.1k | [Skip the fetch when the requested Git remote is absent](https://github.com/MrLesk/Backlog.md/pull/1023) |
+| [**PasarGuard/panel**](https://github.com/PasarGuard/panel) | 2.8k | [Copy links from menus on insecure contexts](https://github.com/PasarGuard/panel/pull/907) |
+| [**pydantic/httpx2**](https://github.com/pydantic/httpx2) | 1.6k | [Contributing docs point at the discussion categories that exist](https://github.com/pydantic/httpx2/pull/1213) |
+| [**libredb/libredb-studio**](https://github.com/libredb/libredb-studio) | 1.3k | 8 PRs, listed in CONTRIBUTORS. Built the [one-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947), fixed MySQL schema diffs [emitting unquoted column defaults](https://github.com/libredb/libredb-studio/pull/1119), bound the demo stacks to loopback ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)) and four docs fixes |
+| [**roboflow/roboflow-python**](https://github.com/roboflow/roboflow-python) | 636 | [Ruff 0.17 ICN001 compliance for datetime imports](https://github.com/roboflow/roboflow-python/pull/551) |
 
-**[libredb-studio](https://github.com/libredb/libredb-studio)** ★1.3k: 8 merged PRs and listed in CONTRIBUTORS. I built the [one-command Keycloak SSO demo stack](https://github.com/libredb/libredb-studio/pull/947), fixed MySQL schema diffs [emitting unquoted column defaults](https://github.com/libredb/libredb-studio/pull/1119), bound the demo stacks to loopback only ([#960](https://github.com/libredb/libredb-studio/pull/960), [#1004](https://github.com/libredb/libredb-studio/pull/1004)) and shipped four docs fixes ([#938](https://github.com/libredb/libredb-studio/pull/938), [#939](https://github.com/libredb/libredb-studio/pull/939), [#940](https://github.com/libredb/libredb-studio/pull/940), [#1657](https://github.com/libredb/libredb-studio/pull/1657)).
-
-Also merged: [sqlfluff #8664](https://github.com/sqlfluff/sqlfluff/pull/8664) (honour inline dialect directives when loading SQL files), [pydantic/httpx2 #1213](https://github.com/pydantic/httpx2/pull/1213), [roboflow-python #551](https://github.com/roboflow/roboflow-python/pull/551) and [PasarGuard/panel #907](https://github.com/PasarGuard/panel/pull/907).
+**Under review:** [marimo](https://github.com/marimo-team/marimo/pull/11119) (23k) · [beets](https://github.com/beetbox/beets/pull/7082) (15.8k) · [roboflow/notebooks](https://github.com/roboflow/notebooks/pull/455) (9.7k) · [Sphinx](https://github.com/sphinx-doc/sphinx/pull/14727) (8.1k) · [tunarr](https://github.com/chrisbenincasa/tunarr/pull/2112) (2.7k) · [NVIDIA NeMo Curator](https://github.com/NVIDIA-NeMo/Curator/pull/2423) (1.8k) · [narwhals](https://github.com/narwhals-dev/narwhals/pull/4037) (1.7k)
 
 ---
 
